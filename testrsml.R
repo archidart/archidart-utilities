@@ -11,7 +11,7 @@ testrsml<-function(inputrsml){
   filenamesrsml<-sub(x=filenames.rsml, pattern="\\.rsml$", replacement="")
   message(paste("Number of rsml files in inputrsml:", length(filenames.rsml), sep=" "))
   
-  pb<-txtProgressBar(min=1, max=length(filenames.rsml), style=3)
+  if (length(filenames.rsml)>1) {pb<-txtProgressBar(min=1, max=length(filenames.rsml), style=3)}
   
   j<-0
   
@@ -46,7 +46,7 @@ testrsml<-function(inputrsml){
             j<-j+1
             data[j,]<-c(filenamesrsml[i], as.vector(r3$.attrs)[1])}}}}}}
     
-    setTxtProgressBar(pb, i)
+    if (length(filenames.rsml)>1) {setTxtProgressBar(pb, i)}
   }
   
   if (is.na(data[1,1])==TRUE) {message("Status: OK")} else {message(paste("Number of roots to delete (length=0):", nrow(data), sep=" "))}
