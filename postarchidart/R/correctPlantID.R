@@ -12,7 +12,7 @@ correctPlantID<-function(x){
     nplant<-length(index) #Number of plants
     xloc<-x$x1[x$file==files[i] & x$order==1 & x$bran=="true"] #x coordinate of the first node of the primary root
     xloc.sort<-sort(xloc) #sort x coordinates
-    plantID<-match(xloc.sort, xloc) #find location of each plant in rsml
+    plantID<-match(xloc, xloc.sort) #find location of each plant in rsml
     
     newplant<-x$plant[x$file==files[i]]
     
