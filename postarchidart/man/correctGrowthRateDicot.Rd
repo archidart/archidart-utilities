@@ -1,9 +1,9 @@
-\name{correctGrowthRate}
-\alias{correctGrowthRate}
+\name{correctGrowthRateDicot}
+\alias{correctGrowthRateDicot}
 \title{Correcting root growth rates}
 \description{This function corrects the growth rate values stored in a data frame returned by \code{\link{architect}}.}
 \usage{
-correctGrowthRate(x)}
+correctGrowthRateDicot(x)}
 \arguments{
   \item{x}{A data frame returned by \code{\link{architect}}.}}
 \value{

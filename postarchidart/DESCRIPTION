@@ -2,7 +2,7 @@ Package: postarchiDART
 Type: Package
 Title: Post-processing of archiDART objects
 Version: 1.0
-Date: 2019-02-19
+Date: 2019-02-20
 Author: Benjamin M Delory 
 Maintainer: Benjamin M Delory <Benjamin.Delory@leuphana.de>
 Description: Functions for the post-processing of archiDART objects.
