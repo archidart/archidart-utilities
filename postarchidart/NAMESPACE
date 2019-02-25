@@ -1,1 +1,1 @@
-export(correctGrowthRateDicot, correctGrowthRateMonocot, correctPlantID, correctRootID)
+export(correctGrowthRateDicot, correctGrowthRateMonocot, correctPlantID, correctRootID, correctFirstOrderRoots)
